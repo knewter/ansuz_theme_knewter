@@ -25,13 +25,13 @@
             </h1>
           </div>
           <%= render :partial => "page/top_nav" -%>
+          <div id='sidebar'>
+            <%= render_special 'sidebar' -%>
+          </div>
           <div id='content'>
             <%= render :partial => "page/breadcrumb" if (@page && (@page != @root)) -%>
             <%= @content_for_layout -%>
             <%= render :partial => "page/child_nav" if (@page && (!@page.children.empty?)) -%>
-            <div id='sidebar'>
-              <%= yield :sidebar -%>
-            </div>
           </div>
           <div class='clear'></div>
         </div> 

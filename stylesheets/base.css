@@ -27,6 +27,7 @@ body{
   display: none;
 }
 #navigation li{
+  list-style-type: none;
   float: left;
   width: 100px;
   position: relative;
@@ -88,3 +89,6 @@ body{
 }
 /* End Blog Posts */
 
+li{
+  list-style-type: square;
+}
